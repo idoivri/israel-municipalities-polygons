@@ -1,0 +1,84 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'brew-cask', '-g' ]
+2 info using npm@2.1.6
+3 info using node@v0.10.33
+4 verbose node symlink /usr/local/bin/node
+5 silly cache add args [ 'brew-cask', null ]
+6 verbose cache add spec brew-cask
+7 silly cache add parsed spec { raw: 'brew-cask',
+7 silly cache add   scope: null,
+7 silly cache add   name: 'brew-cask',
+7 silly cache add   rawSpec: '',
+7 silly cache add   spec: '*',
+7 silly cache add   type: 'range' }
+8 verbose addNamed brew-cask@*
+9 silly addNamed semver.valid null
+10 silly addNamed semver.validRange *
+11 silly addNameRange { name: 'brew-cask', range: '*', hasData: false }
+12 verbose mapToRegistry name brew-cask
+13 verbose mapToRegistry uri https://registry.npmjs.org/brew-cask
+14 verbose addNameRange registry:https://registry.npmjs.org/brew-cask not in flight; fetching
+15 verbose request on initialization, where is /brew-cask
+16 verbose request after pass 1, where is /brew-cask
+17 verbose request url raw /brew-cask
+18 verbose request resolving registry [ 'https://registry.npmjs.org/', './brew-cask' ]
+19 verbose request after pass 2, where is https://registry.npmjs.org/brew-cask
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 20:35:37
+22 verbose request id 2b70a9dae77e6366
+23 http request GET https://registry.npmjs.org/brew-cask
+24 http 404 https://registry.npmjs.org/brew-cask
+25 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+25 verbose headers   'content-type': 'application/json',
+25 verbose headers   'cache-control': 'max-age=0',
+25 verbose headers   'content-length': '51',
+25 verbose headers   'accept-ranges': 'bytes',
+25 verbose headers   date: 'Mon, 15 Jun 2015 17:35:37 GMT',
+25 verbose headers   via: '1.1 varnish',
+25 verbose headers   age: '0',
+25 verbose headers   connection: 'keep-alive',
+25 verbose headers   'x-served-by': 'cache-fra1246-FRA',
+25 verbose headers   'x-cache': 'MISS',
+25 verbose headers   'x-cache-hits': '0',
+25 verbose headers   'x-timer': 'S1434389736.919175,VS0,VE185' }
+26 silly registry.get cb [ 404,
+26 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'cache-control': 'max-age=0',
+26 silly registry.get     'content-length': '51',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     date: 'Mon, 15 Jun 2015 17:35:37 GMT',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '0',
+26 silly registry.get     connection: 'keep-alive',
+26 silly registry.get     'x-served-by': 'cache-fra1246-FRA',
+26 silly registry.get     'x-cache': 'MISS',
+26 silly registry.get     'x-cache-hits': '0',
+26 silly registry.get     'x-timer': 'S1434389736.919175,VS0,VE185' } ]
+27 verbose stack Error: 404 Not Found: brew-cask
+27 verbose stack     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:258:14)
+27 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:197:65)
+27 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:364:22)
+27 verbose stack     at Request.emit (events.js:98:17)
+27 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1318:14)
+27 verbose stack     at Request.emit (events.js:117:20)
+27 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1266:12)
+27 verbose stack     at IncomingMessage.emit (events.js:117:20)
+27 verbose stack     at _stream_readable.js:943:16
+27 verbose stack     at process._tickCallback (node.js:419:13)
+28 verbose statusCode 404
+29 verbose pkgid brew-cask
+30 verbose cwd /Users/idoivri/Sites/projects/israel-municipalities-polygons
+31 error Darwin 14.3.0
+32 error argv "node" "/usr/local/bin/npm" "install" "brew-cask" "-g"
+33 error node v0.10.33
+34 error npm  v2.1.6
+35 error code E404
+36 error 404 Not Found: brew-cask
+36 error 404
+36 error 404 'brew-cask' is not in the npm registry.
+36 error 404 You should bug the author to publish it (or use the name yourself!)
+36 error 404
+36 error 404 Note that you can also install from a
+36 error 404 tarball, folder, http url, or git url.
+37 verbose exit [ 1, true ]
